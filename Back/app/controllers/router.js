@@ -28,17 +28,17 @@ router.use('/admin/categorias',adminCategoriasRouter);
 
 
 
-// const path = require("path");
+const path = require("path");
 
-// router.get("/", (req, res) => {
-//   let indexPath = path.join(__dirname, "../views/home.html");
-//   res.sendFile(indexPath);
-// });
+router.get("/", (req, res) => {
+  let indexPath = path.join(__dirname, "../views/home.html");
+  res.sendFile(indexPath);
+});
 
-// router.get("/home", (req, res) => {
-//     let indexPath = path.join(__dirname, "../views/home.html");
-//     res.sendFile(indexPath);
-//   });
+router.get("/home", (req, res) => {
+    let indexPath = path.join(__dirname, "../views/home.html");
+    res.sendFile(indexPath);
+  });
 
 //   router.get("/shopping_cart", (req, res) => {
 //     let indexPath = path.join(__dirname, "../views/Shopping_Cart.html");
