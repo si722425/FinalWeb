@@ -1,6 +1,6 @@
 "use strict";
 
-const usrURL = 'http://localhost:3000/users/';
+const usrURL = 'https://encuestapp-iteso2.herokuapp.com/users/';
 
 let userContainer = document.getElementById('users');
 
@@ -30,7 +30,7 @@ function userListToHtml(userList){
 
 function borrarUser(uuid){
     console.log(uuid);
-    deleteUser("http://localhost:3000/admin/users?id=" + uuid);
+    deleteUser("https://encuestapp-iteso2.herokuapp.com/admin/users?id=" + uuid);
 }
 
 loadUsers(usrURL).then(users => {

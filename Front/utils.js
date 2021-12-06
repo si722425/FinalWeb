@@ -1,13 +1,13 @@
 "use strict";
 
-const productsUrl = 'http://localhost:3000/products/';
-const cartUrl = 'http://localhost:3000/products/cart';
+const productsUrl = 'https://encuestapp-iteso2.herokuapp.com/products/';
+const cartUrl = 'https://encuestapp-iteso2.herokuapp.com/products/cart';
 
-const usrURL = 'http://localhost:3000/users/';
-const catURL = 'http://localhost:3000/categorias/';
-const encURL = 'http://localhost:3000/encuestas/';
+const usrURL = 'https://encuestapp-iteso2.herokuapp.com/users/';
+const catURL = 'https://encuestapp-iteso2.herokuapp.com/categorias/';
+const encURL = 'https://encuestapp-iteso2.herokuapp.com/encuestas/';
 
-const usrUURL = 'http://localhost:3000/users/';
+const usrUURL = 'https://encuestapp-iteso2.herokuapp.com/users/';
 
 function initShoppingCart(){
     if (sessionStorage.getItem("shoppingCart")  == null){

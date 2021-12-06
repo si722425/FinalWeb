@@ -4,9 +4,9 @@ var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("id");
 
-const catURL = 'http://localhost:3000/encuestas?id=' + c;
+const catURL = 'https://encuestapp-iteso2.herokuapp.com/encuestas?id=' + c;
 
-const catAdminURL = 'http://localhost:3000/admin/encuestas?id=' + c;
+const catAdminURL = 'https://encuestapp-iteso2.herokuapp.com/admin/encuestas?id=' + c;
 
 let categoriasContainer = document.getElementById('barras');
 

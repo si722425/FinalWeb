@@ -5,7 +5,7 @@ let descripcionContainer = document.getElementById('descripcionCat');
 let nombreContainer = document.getElementById('nombreCat');
 
 function cargarCat() {
-    let urlAltCat = 'http://localhost:3000/admin/categorias'
+    let urlAltCat = 'https://encuestapp-iteso2.herokuapp.com/admin/categorias'
     let categoria = {
         nombre: "/" + nombreContainer.value,
         creador: "Juan Felipe Gudiño Ramos",

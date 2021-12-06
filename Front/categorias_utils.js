@@ -1,6 +1,6 @@
 "use strict";
 
-const catURL = 'http://localhost:3000/categorias/';
+const catURL = 'https://encuestapp-iteso2.herokuapp.com/categorias/';
 
 let categoriaContainer = document.getElementById('categorias');
 
@@ -23,8 +23,8 @@ function categoriasListToHtml(catList){
 }
 
 function borrarCat(uuid){
-    console.log(uuid);
-    deleteUser("http://localhost:3000/admin/categorias?id=" + uuid);
+    console.log("uuid");
+    deleteUser("https://encuestapp-iteso2.herokuapp.com/admin/categorias?id=" + uuid);
     location.reload();
 }
 

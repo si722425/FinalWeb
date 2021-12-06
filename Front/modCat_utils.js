@@ -4,9 +4,9 @@ var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("id");
 
-const catURL = 'http://localhost:3000/categorias?id=' + c;
+const catURL = 'https://encuestapp-iteso2.herokuapp.com/categorias?id=' + c;
 
-const catAdminURL = 'http://localhost:3000/admin/categorias?id=' + c;
+const catAdminURL = 'https://encuestapp-iteso2.herokuapp.com/admin/categorias?id=' + c;
 
 loadmodcat(catURL).then(categorias => {
     modcatListToHtml(categorias);

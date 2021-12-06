@@ -1,6 +1,6 @@
 "use strict";
 
-const usURL = 'http://localhost:3000/users?id=abcd';
+const usURL = 'https://encuestapp-iteso2.herokuapp.com/users?id=abcd';
 
 
 

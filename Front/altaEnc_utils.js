@@ -1,6 +1,6 @@
 "use strict";
 
-const catURL = 'http://localhost:3000/categorias/';
+const catURL = 'https://encuestapp-iteso2.herokuapp.com/categorias/';
 
 let categoriasContainer = document.getElementById('categoriacar');
 

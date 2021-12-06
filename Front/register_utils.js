@@ -1,6 +1,6 @@
 "use strict";
 
-const usrURL = 'http://localhost:3000/admin/users';
+const usrURL = 'https://encuestapp-iteso2.herokuapp.com/admin/users';
 
 function cargarEnc(){
 

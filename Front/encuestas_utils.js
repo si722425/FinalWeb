@@ -1,6 +1,6 @@
 "use strict";
 
-const encURL = 'http://localhost:3000/encuestas/';
+const encURL = 'https://encuestapp-iteso2.herokuapp.com/encuestas/';
 
 let encuestasContainer = document.getElementById('encuestas');
 
@@ -22,7 +22,7 @@ function encuestasListToHtml(catList){
 
 function borrarEnc(uuid){
     console.log(uuid);
-    deleteUser("http://localhost:3000/admin/encuestas?id=" + uuid);
+    deleteUser("https://encuestapp-iteso2.herokuapp.com/admin/encuestas?id=" + uuid);
     location.reload();
 }
 

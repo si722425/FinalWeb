@@ -1,6 +1,6 @@
 "use strict";
 
-const usrURL = 'http://localhost:3000/login';
+const usrURL = 'https://encuestapp-iteso2.herokuapp.com/login';
 
 function cargarLog(){
 
