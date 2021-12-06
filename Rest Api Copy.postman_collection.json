@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "b78e9a72-619b-4469-87e0-0f0bdcd455b1",
+		"name": "Rest Api Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"productUuid\":\"d3c5228a-1d63-4526-9e54-e357c9a7b35c\",\"amount\":20},\r\n    {\"productUuid\":\"73d9868d-16d3-4852-bcaf-2549350c7ca1\",\"amount\":10},\r\n    {\"productUuid\":\"df2008a5-1c40-4dd1-9db7-8aacc03ae2fb\",\"amount\":23}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/products/?id=df2008a5-1c40-4dd1-9db7-8aacc03ae2fb",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "df2008a5-1c40-4dd1-9db7-8aacc03ae2fb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categoria Admin Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"_uuid\": \"d3c5228a-1d63-4526-9e54-e357c9a7b35c\",\r\n    \"_title\": \"Pepino de mar delicioso\",\r\n    \"_description\": \"Los mejores pepinillos del mar, directo desde tapachula.\",\r\n    \"_imageUrl\": \"https://images.freeimages.com/images/large-previews/830/cucumber-1502111.jpg\",\r\n    \"_unit\": \"pieza\",\r\n    \"_stock\": 25,\r\n    \"_pricePerUnit\": 1.4,\r\n    \"_category\": \"Fruta\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Admin Post Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"_uuid\": \"d3c5228a-1d63-4526-9e54-e357c9a7b35c\",\r\n    \"_title\": \"Pepino de mar delicioso\",\r\n    \"_description\": \"Los mejores pepinillos del mar, directo desde tapachula.\",\r\n    \"_imageUrl\": \"https://images.freeimages.com/images/large-previews/830/cucumber-1502111.jpg\",\r\n    \"_unit\": \"pieza\",\r\n    \"_stock\": 25,\r\n    \"_pricePerUnit\": 1.4,\r\n    \"_category\": \"Fruta\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encuestas Admin Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"_uuid\": \"d3c5228a-1d63-4526-9e54-e357c9a7b35c\",\r\n    \"_title\": \"Pepino de mar delicioso\",\r\n    \"_description\": \"Los mejores pepinillos del mar, directo desde tapachula.\",\r\n    \"_imageUrl\": \"https://images.freeimages.com/images/large-previews/830/cucumber-1502111.jpg\",\r\n    \"_unit\": \"pieza\",\r\n    \"_stock\": 25,\r\n    \"_pricePerUnit\": 1.4,\r\n    \"_category\": \"Fruta\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Admin put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_uuid\": \"abcd\",\r\n    \"_nombre\": \"gACHUPIN\",\r\n    \"_correo\": \"Los mejores platanos de a, directo desde Tabasco.\",\r\n    \"_imageUrl\": \"https://images.freeimages.com/images/large-previews/4ec/banana-s-1326714.jpg\",\r\n    \"_password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/users?id=abcd",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "abcd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categoria Admin put Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_uuid\": \"df2008a5-1c40-4dd1-9db7-8aacc03ae2fb\",\r\n    \"_nombre\": \"Categoria23\",\r\n    \"_creador\": \"Los mejores platanos de México, directo desde Tabasco.\",\r\n    \"_uuidCreador\": \"descripción\",\r\n    \"_description\": \"pregunta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/categorias?id=abcd",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"categorias"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "abcd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encuestas Admin put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_uuid\": \"abcd\",\r\n    \"_nombre\": \"gACHUPIN\",\r\n    \"_correo\": \"Los mejores platanos de a, directo desde Tabasco.\",\r\n    \"_imageUrl\": \"https://images.freeimages.com/images/large-previews/4ec/banana-s-1326714.jpg\",\r\n    \"_password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/admin/users?id=abcd",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "abcd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Delete Admin",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/admin/products?id=da9cea07-552d-4d3e-a8e8-a3b22312e0bc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "da9cea07-552d-4d3e-a8e8-a3b22312e0bc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Categoria Delete Admin Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/admin/products?id=da9cea07-552d-4d3e-a8e8-a3b22312e0bc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "da9cea07-552d-4d3e-a8e8-a3b22312e0bc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encuestas Delete Admin",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/admin/products?id=da9cea07-552d-4d3e-a8e8-a3b22312e0bc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "da9cea07-552d-4d3e-a8e8-a3b22312e0bc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

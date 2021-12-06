@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <style>
+        
+.title {
+    margin-bottom: 5vh
+}
+
+.card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent
+}
+
+@media(max-width:767px) {
+    .card {
+        margin: 3vh auto
+    }
+}
+
+.cart {
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem
+}
+
+@media(max-width:767px) {
+    .cart {
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem
+    }
+}
+
+.summary {
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65)
+}
+
+@media(max-width:767px) {
+    .summary {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem
+    }
+}
+
+.summary .col-2 {
+    padding: 0
+}
+
+.summary .col-10 {
+    padding: 0
+}
+
+
+.row {
+    margin: 0
+}
+
+.title b {
+    font-size: 1.5rem
+}
+
+.main {
+    margin: 0;
+    padding: 2vh 0;
+    width: 100%
+}
+
+.col-2,
+.col {
+    padding: 0 1vh
+}
+
+a {
+    padding: 0 1vh
+}
+
+.close {
+    margin-left: auto;
+    font-size: 0.7rem
+}
+
+img {
+    width: 3.5rem
+}
+
+.back-to-shop {
+    margin-top: 4.5rem
+}
+
+h5 {
+    margin-top: 4vh
+}
+
+hr {
+    margin-top: 1.25rem
+}
+
+form {
+    padding: 2vh 0
+}
+
+select {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1.5vh 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 100%;
+    background-color: rgb(247, 247, 247)
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.btncheckout {
+    background-color: #000;
+    border-color: #000;
+    color: white;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: 4vh;
+    padding: 1vh;
+    border-radius: 0
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    transition: none
+}
+
+.btn:hover {
+    color: white
+}
+
+a {
+    color: black
+}
+
+a:hover {
+    color: black;
+    text-decoration: none
+}
+
+#code {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand nav-item nav-link active" href="home.html">DASW</a>
+
+        <div class="flex-grow-1">
+            <form class="form-inline">
+                <input class="form-control col-sm-9 col-lg-10" type="search"
+                    placeholder="Encuentra de todo empieza a buscar" aria-label="Search">
+                <button class="btn btn-outline-light col-sm-3 col-lg-2" type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-item nav-link dropdown-toggle mr-2" href="#" data-toggle="dropdown">
+                        Mi Cuenta
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#Register">Registro</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mis pedidos</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge badge-dark" id ="cartbadgeshop"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="text-center m-3">Resumen de Compra</h2>
+    
+    <div class="container">
+
+        <div class="card">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col">
+                                <h4><b>Shopping Cart</b></h4>
+                            </div>
+                            <div class="col align-self-center text-right text-muted" id="items-account"></div>
+                        </div>
+                    </div>
+                    <div class="row" id ="productos">
+                    </div>
+                    <div class="back-to-shop"><a href="home.html">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                </div>
+                <div class="col-md-4 summary">
+                    <div>
+                        <h5><b>Resumen de compras</b></h5>
+                    </div>
+                    <hr>
+                    <div id="carritocuenta">
+                        <div class="row">
+                            <div class="col" style="padding-left:0;" id="items-account2"></div>
+                            <div class="col text-right">&euro; 132.00</div>
+                        </div>
+                    </div>
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">Cuenta Total</div>
+                        <div class="col text-right" id="monto"></div>
+                    </div> <button class="btncheckout">Pagar</button>
+                </div>
+            </div>
+        <!-- </div>
+        <div class="row">
+            <div class="container col-md-8" id="cartList">
+                
+            </div>
+            <div class="container col-md-4">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Total de compra</h5>
+                            <div class="container col-md-8 col-12" id="cuenta">
+                                <hr>
+                                <hr>
+                            </div>
+                        <p id="monto">Monto a pagar: 0.00</p>
+                        <a href="#" class="btn btn-outline-success btn-block btn-lg">Pagar</a>
+                        <a href="Practica1.html" class="btn btn-outline-danger btn-block">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <script src="products.js"></script>
+    <script src="shopping_cart.js"></script>
+    <script src="ajax_handler.js"></script>
+    <script src="utils.js"></script>
+    <script src="cart_utils.js"></script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

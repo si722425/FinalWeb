@@ -1,0 +1,41 @@
+[{
+    "_uuid": "df2008a5-1c40-4dd1-9db7",
+    "_si": "75",
+    "_no": "25",
+    "_description": "Si pudieran elegir que prefererirían ¿Volar o teletransportarse?",
+    "_pregunta": "Volar o teletransportación",
+    "_comentarios": "12",
+    "_uuidenc": "1",
+    "_txtv1": "volar",
+    "_txtv2": "teletransportar"
+}, {
+    "_uuid": "df2008a5-1c40-4dd1-8aacc03ae2fb",
+    "_si": "42",
+    "_no": "63",
+    "_description": "¿Que prefieren? ¿Hawaiiana o Pepperami?",
+    "_pregunta": "¿Hawaiiana o Pepperami?",
+    "_comentarios": "3",
+    "_uuidenc": "1",
+    "_txtv1": "Hawaiiana",
+    "_txtv2": "Pepperami"
+}, {
+    "_uuid": "df2008a5-1c40-9db7-8aacc03ae2fb",
+    "_si": "61",
+    "_no": "47",
+    "_description": "Si hoy volvieran a haber votacíones, ¿votarías por AMLO?",
+    "_pregunta": "¿Votarías por AMLO?",
+    "_comentarios": "15",
+    "_uuidenc": "1",
+    "_txtv1": "si",
+    "_txtv2": "no"
+}, {
+    "_uuid": "3ae53850-1e92-4544-9150-b8f2ccff95f3",
+    "_si": "60",
+    "_no": "68",
+    "_description": "por cual votas tu ?",
+    "_pregunta": "amlo o epn",
+    "_comentarios": "20",
+    "_uuidenc": "1",
+    "_txtv1": "amlo",
+    "_txtv2": "epn"
+}]
